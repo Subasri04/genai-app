@@ -20,11 +20,33 @@ git clone <YOUR_GITHUB_REPO_URL>
 cd genai-app
 ```
 
-### 2. Create and Activate Virtual Environment
+### 2. Create Virtual Environment
 ```bash
 python -m venv venv
+```
+If python defaults to an older version or doesn't work, use:
+```bash
+python3 -m venv venv
+```
+
+### 3. Activate Virtual Environment
+1. On Windows (Command Prompt):
+```bash
+DOS
+venv\Scripts\activate.bat
+```
+2. On Windows (PowerShell):
+```bash
+PowerShell
 .\venv\Scripts\Activate.ps1
 ```
+
+3. On macOS / Linux:
+```bash
+Bash
+source venv/bin/activate
+```
+
 ### 3. Install Dependencies
 ```bash
 pip install streamlit google-genai python-dotenv
